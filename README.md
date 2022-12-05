@@ -27,6 +27,8 @@ Check out our FAQ for more information.
   - [**December 1 - William Butcher's Mission**](#december-1---william-butchers-mission)
   - [**December 2 - The Secret Language**](#december-2---the-secret-language)
   - [**December 3 - Minesweeper**](#december-3---minesweeper)
+  - [**December 4 - Industry**](#december-4---industry)
+  - [**December 5 - Don’t let Mason misspend!**](#december-5---dont-let-mason-misspend)
   - [**FAQ**](#faq)
   
   
@@ -67,8 +69,8 @@ Check out our FAQ for more information.
 
    ``` 
    
+   #### Explanation
    ```
-     Explanation:
      
         The first line of input will specify the number of words (n). The subsequent 'n' lines will specify the word to be translated.
         
@@ -166,9 +168,9 @@ Help Raj translate and decode his friends' secret messages.
 
 ```
 
+#### Explanation
 ```
-    Explanation:
-    
+ 
     The first line of input shows the number of rows and columns of the minefield (2D array).
     The next line(s) of input show the minefield with the mines and the mine-free spots. 
     
@@ -189,6 +191,135 @@ Help Raj translate and decode his friends' secret messages.
     - [Minesweeper](https://en.wikipedia.org/wiki/Minesweeper_(video_game))
     
 ----
+
+### December 4 - Industry
+
+   #### Problem Statement
+  Harper is a graduate at a bank called Pierpoint, the first assignment given to her by her boss, Eric, is to analyse the stock market rise and fall for a given set of stock market change values for n days. 
+  She must submit a report to Eric highlighting the period of time when the company should sell to maximise their profit, she must also mention the profit value. 
+  
+  Given a set of values, help Harper gather the necessary data for her report. 
+
+   <p align="center"><img src="https://user-images.githubusercontent.com/105559815/205451731-fa4f9219-8449-4f1e-a31f-0453b858bda3.gif" width="400"></p>
+   
+   
+   #### Sample Input/Output
+   ```
+ Input:
+ 
+    No. of days: 5
+
+    Given stock market change values: { 5,4,-1,7,8}
+
+  
+ Output:
+ 
+  Profit Value: 23
+  Proposed days to sell: Day: 1 to Day: 5
+  Stock market Change Values: {5,4,-1,7,8}
+
+
+  ```
+  ```
+ Input:
+ 
+    No. of Days:19
+    Given stock market change values: { 5,-4,12,-2, -5, 6, -2,-3, 1, 5, -6,-11,7,-31,9,2,-3,8,-5 }
+
+
+ Output:
+ 
+  Profit Value: 16
+  Proposed days to sell: Day: 15 to Day: 18
+  Stock market Change Values: {9, 2, -3, 8}
+
+
+```
+
+#### Explanation
+```
+    
+    The first line of input is the number of days Harper is going to consider for her analysis.
+    The second line of input is the stock market change values for those given days.
+
+    In order to find the best period of time to sell in order to maximise profit, 
+    Harper must find the maximum sum of all the stock change values in every possible subset of days from the given set.
+
+    In the given sample input, it is found that out of all the subsets obtained, the one having the maximum sum was the entire set as a whole. 
+    And thus, the company will be able to make maximum profit if they sell on all the days in that given period of time.
+
+    
+```
+- **References**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
+    - [Maximum Sum Subarray](https://www.geeksforgeeks.org/maximum-subarray-sum-using-divide-and-conquer-algorithm/)
+    - [Divide and Conquer](https://www.geeksforgeeks.org/introduction-to-divide-and-conquer-algorithm-data-structure-and-algorithm-tutorials/)
+----
+
+### December 5 - Don’t let Mason misspend!
+#### Problem Statement
+MASON is a motoring enthusiast and he owns a sports bike . With the price of petrol going up and down in a pattern , MASON is worried whether his salary would be sufficient to meet his needs apart from fueling his bike . So he decides to calculate how much he spends on fueling his bike per month. Help MASON calculate his fuel expenditure. If he spends more than 10 PERCENTAGE of his INCOME give him  a warning message reading “EXPENDITURE EXCEEDING LIMIT”
+
+<p align="center"><img src="https://user-images.githubusercontent.com/113821083/205503831-d0cb042f-99ee-46e1-a55c-2570579ca947.jpeg" width="400"></p>
+
+ #### Conditions
+1. MASON fuels his bike twice a day .
+
+2. The PRICE of the fuel is x/l initially.
+
+3. Every third day the price goes up by 3 rupees .
+
+4. Every fifth day the price goes down by 2 rupees .
+
+5. Help him to calculate his expense for a period of one month
+(31DAYS) .
+
+6. Check whether the expenditure is more than 10 percent of his income .
+
+7. His income is 50,000 rupees per month.
+
+ #### Sample Input/Output
+     
+```    
+ Input:
+  fuel_price=75
+
+Output:
+Expenditure=4686
+
+“EXPENDITURE WITHIN LIMIT”
+
+```
+    
+```
+Input:
+fuel_price=97
+
+Output:
+Expenditure=6050
+
+“EXPENDITURE EXCEEDING LIMIT”
+    
+```
+
+ #### Explanation
+ ```
+ 
+        The input is the rate of the fuel in the beginning of the month.
+        The output is the amount he must spend on fueling his bike. 
+        If the expenditure exceeds 10% of the income (i.e greater than 5000), then an alert message must be displayed.
+ ```
+
+- **References**
+    - [Looping in C](https://www.tutorialspoint.com/cprogramming/c_loops.htm)
+    - [Looping in C++](https://www.programiz.com/cpp-programming/for-loop)
+    - [Looping in Java](https://www.geeksforgeeks.org/loops-in-java/)
+    - [Looping in Python](https://www.w3schools.com/python/python_for_loops.asp)
+
+----
+
 
 FAQ
 ======
