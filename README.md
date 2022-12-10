@@ -29,6 +29,11 @@ Check out our FAQ for more information.
   - [**December 3 - Minesweeper**](#december-3---minesweeper)
   - [**December 4 - Industry**](#december-4---industry)
   - [**December 5 - Don’t let Mason misspend!**](#december-5---dont-let-mason-misspend)
+  - [**December 6 - Swapped**](#december-6---swapped)
+  - [**December 7 - Word Map**](#december-7---word-map)
+  - [**December 8 - Aptitude Check!**](#december-8---aptitude-check)
+  - [**December 9 - Kochouseph Konundrum!**](#december-9---kochouseph-konundrum)
+  - [**December 10 - Play with words**](#december-10---play-with-words)
   - [**FAQ**](#faq)
   
   
@@ -273,12 +278,14 @@ MASON is a motoring enthusiast and he owns a sports bike . With the price of pet
 
 4. Every fifth day the price goes down by 2 rupees .
 
-5. Help him to calculate his expense for a period of one month
+5. On the other days the price of the fuel remains x/l.
+
+6. Help him to calculate his expense for a period of one month
 (31DAYS) .
 
-6. Check whether the expenditure is more than 10 percent of his income .
+7. Check whether the expenditure is more than 10 percent of his income .
 
-7. His income is 50,000 rupees per month.
+8. His income is 50,000 rupees per month.
 
  #### Sample Input/Output
      
@@ -307,9 +314,10 @@ Expenditure=6050
  #### Explanation
  ```
  
-        The input is the rate of the fuel in the beginning of the month.
+         The input is the rate of the fuel in the beginning of the month.
         The output is the amount he must spend on fueling his bike. 
         If the expenditure exceeds 10% of the income (i.e greater than 5000), then an alert message must be displayed.
+        
  ```
 
 - **References**
@@ -320,6 +328,298 @@ Expenditure=6050
 
 ----
 
+### December 6 - Swapped
+#### Problem Statement
+Bob and Tanika are best friends. They were bored so they decided to play a game. The game they chose to play involved a set of ‘n’ positive numbers. 
+The player who goes first must choose a position ‘p’ and their turn ends with that. 
+In the subsequent turns,  the player must first subtract the value in the first position by 1 and swap it with the value in position ‘p’. 
+The players will take alternate turns and the game goes on till the value in the first position becomes 0. 
+The player whose turn it is loses the game when the value in the first position becomes 0.
+Determine the winner of the game if both players play optimally and display the winner's name.
+
+
+<p align="center"><img src="https://user-images.githubusercontent.com/105559815/205705632-898b9a40-ae67-48e6-a496-abb07e90aa36.png" width="400"></p>
+
+ #### Sample Input/Output
+     
+```    
+ Input:
+  Position=3
+  Set of numbers: 5 4 4 
+  Player going first: Tanika
+
+
+Output:
+   Tanika wins the game!
+   Bob loses the game!
+
+
+```
+
+ #### Explanation
+ ```
+        1) 5 4 4 (initial)
+        
+            Tanika chooses position 3
+            
+        2) 4 4 4 (bob)
+        
+            5-1, swapping (5-1) with value in position 3 (4)
+            
+        3) 4 4 3 (tanika)
+        4) 3 4 3 (bob)
+        5) 3 4 2 (tanika)
+        6) 2 4 2 (bob)
+        7) 2 4 1 (tanika)
+        8) 1 4 1 (bob)
+        9) 1 4 0 (tanika)
+        10) 0 4 0 (bob)
+        
+        Since, on bob's turn the initial value at the first position is 0, he loses the game.
+ 
+ ```
+
+- **References**
+    - [Looping in C](https://www.tutorialspoint.com/cprogramming/c_loops.htm)
+    - [Looping in C++](https://www.programiz.com/cpp-programming/for-loop)
+    - [Looping in Java](https://www.geeksforgeeks.org/loops-in-java/)
+    - [Looping in Python](https://www.w3schools.com/python/python_for_loops.asp)
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
+
+----
+
+### December 7 - Word Map
+#### Problem Statement
+
+You are given a grid made up of random characters. 
+Given a word, your task is to determine whether the word can be constructed from the given grid.
+
+The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. 
+The same letter cell may not be used more than once.
+
+
+<p align="center"><img src="https://user-images.githubusercontent.com/105559815/205982685-c0637a1f-183d-449f-9e6f-4ef9dee62d3e.jpg" width="400"></p>
+
+ #### Sample Input/Output
+     
+```    
+ Input:
+  COMMUNICATION
+
+Output:
+  Found
+  
+```
+
+```    
+ Input:
+    DOCUMENT
+
+Output:
+  Not Found
+  
+```
+
+```   
+ Input:
+    MEDIATION
+
+Output:
+  Found
+  
+```
+
+ #### Explanation
+ ```
+     You are required to construct the given grid in the form of a 2D array of characters.
+     
+     All the characters must be either in uppercase.
+
+     The dimensions of the grid are 15x15.
+      
+     The input is a single word.
+      
+     The output is "Found" if the input word is found in the grid else it is "Not Found".
+ 
+ ```
+
+- **References**
+    - [Strings in C++](https://www.tutorialspoint.com/cplusplus/cpp_strings.htm)
+    - [Strings in Java](https://www.tutorialspoint.com/java/java_strings.htm)
+    - [String in Python](https://www.tutorialspoint.com/python/python_strings.htm)
+    
+----
+    
+### December 8 - Aptitude Check!
+#### Problem Statement
+Arshith is a pre-final year student preparing for his aptitude, technical and interview rounds as part of his placement training. 
+
+He has come across a mind-boggling problem statement that integrates a coding problem with a logical question as specified below:
+
+In a specific language, “DEMOCRACY” is coded as “EDOMRCCAY".
+
+Help Arshith develop a way to translate any given word to that particular language. Compute it using any approach of programming.
+
+
+<p align="center"><img src="https://user-images.githubusercontent.com/110989285/206233419-53af37a7-e675-4b59-b722-f67adfe0a5ae.png" width="400"></p>
+
+ #### Sample Input/Output
+     
+```    
+ Input:  UNCOPYRIGHTABLE
+ Output: NUOCYPIRHGATLBE
+
+```
+
+```
+ Input:  SPEEDRUNNER
+ Output: PSEERDNUENR
+
+```
+- **References**
+    - [Strings in C++](https://www.geeksforgeeks.org/stdstring-class-in-c/)
+    - [Strings in Python](https://www.geeksforgeeks.org/python-string/)
+    - [String in Java](https://www.geeksforgeeks.org/strings-in-java/)
+
+----
+
+### December 9 - Kochouseph Konundrum!
+#### Problem Statement
+Kochouseph Chittilappilly went to Dhruv Zplanet , a gaming space, with his friends and played a game called “Guess the Word”.
+
+Rules of the game are –
+
+Computer displays some strings on the screen and the player should pick one string / word if this word matches with the random word that the computer picks then the player is declared as Winner.
+
+Kochouseph Chittilappilly’s friends played the game and no one won the game. This is Kochouseph Chittilappilly’s turn to play and he decided to win the game.
+What he observed from his friend’s game is that the computer is picking up the first string whose length is odd and is of maximum length. 
+
+Due to system failures computers sometimes cannot generate odd length words. In such cases you will lose the game irrespective of whether you guess the right word or not and it displays “better luck next time”. 
+
+Write a program to help Kochouseph win the game.
+
+
+<p align="center"><img src="https://user-images.githubusercontent.com/110716198/206476505-7cc0c18c-4034-46e1-8cd4-7e2ef8f72801.png" width="400"></p>
+
+ #### Sample Input/Output
+     
+```    
+Input:
+5
+Hello Good Morning Welcome You
+
+Output :
+Morning
+
+```
+
+```    
+Input:
+3
+Go to hell
+
+Output :
+Better luck next time
+
+```
+
+ #### Explanation
+ 
+ ```
+ The first line of input is the number of words in the given string.
+ The second line of input is the string of words.
+ 
+ The output is the word chosen by the computer.
+ 
+ ```
+ 
+- **References**
+    - [Strings in C++](https://www.geeksforgeeks.org/stdstring-class-in-c/)
+    - [Strings in Python](https://www.geeksforgeeks.org/python-string/)
+    - [String in Java](https://www.geeksforgeeks.org/strings-in-java/)
+
+----
+
+### December 10 - Play with words
+#### Problem Statement
+A group of students were playing a word game. They divided themselves into teams and had 4 rounds. 
+
+One round was the pronunciation round. One team challenged the other team to pronounce “schtschurowskia”. It was difficult for both the teams to pronounce the word. They approached their teacher for help. He gave them a hint. 
+
+Have a look at the hint!
+
+Hint:
+ A word is hard to pronounce if it contains 4 or more consonants in a row; otherwise it is easy to pronounce. 
+ 
+For example, "apple" and "polish" are easy to pronounce, but "schtschurowskia" is hard to pronounce.   After giving them an example, he asked them  to solve the following problem.
+ 
+Given: A string S consisting of N lowercase Latin characters. 
+
+To Determine:  Whether it is easy to pronounce or not based on the rule above — print YES if it is easy to pronounce and NO otherwise.
+For the purposes of this problem, the vowels are the characters {a,e,i,o,u} and the consonants are the other 21 characters.
+Help them solve the problem.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/105559815/206757545-341cbd7a-d12a-4af9-8d1f-a4da640343b4.jpg" width="400"></p>
+
+ #### Sample Input/Output
+     
+```    
+Input:
+5
+5
+apple
+15
+schtschurowskia
+6
+polish
+5
+tryst
+3
+cry
+
+Output:
+YES
+NO
+YES
+NO
+YES
+ 
+ ```
+ 
+#### Explanation:
+
+ ```
+
+Input Format:
+
+The first line of input will contain a single integer T, denoting the number of test cases.
+Each test case consists of two lines of input.
+The first line of each test case contains a single integer N, the length of string S.
+The second line of each test case contains the string S.
+
+Output Format:
+
+For each test case, output on a new line the answer — YES if S is easy to pronounce, and NO otherwise.
+Each character of the output may be printed in either uppercase or lowercase. For example, the strings YES, yeS, yes, and YeS will all be treated as identical.
+
+Constraints:
+
+1≤T≤100
+
+1≤N≤100
+
+S contains only lowercase Latin characters, i.e, the characters {a,b,c…….z}
+
+```
+
+- **References**
+    - [Strings in C++](https://www.geeksforgeeks.org/stdstring-class-in-c/)
+    - [Strings in Python](https://www.geeksforgeeks.org/python-string/)
+    - [String in Java](https://www.geeksforgeeks.org/strings-in-java/)
+
+----
 
 FAQ
 ======
